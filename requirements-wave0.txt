@@ -1,0 +1,41 @@
+# WAVE-0 Stage-1 / Stage-2 training: Linux x86_64, Python 3.10, NVIDIA GPU.
+# Run from the repository root in a new environment; see README.md for FFmpeg
+# and the CUDA 12.6 PyTorch wheel installation step.
+#
+# These are core dependency pins, NOT a complete transitive dependency lock or
+# a claim of end-to-end training reproduction. Remaining base dependencies are
+# resolved from pyproject.toml. Do not combine with the upstream [all] extra or
+# extras requiring a different Transformers version.
+
+# Install this checkout and its PI0.5-specific dependencies (not other policies).
+-e .[pi]
+
+# Keep this ABI-compatible trio together. Install CUDA wheels before this file.
+torch==2.7.1
+torchvision==0.22.1
+torchcodec==0.5
+
+# Modified Gemma / AdaRMSNorm is required; stock PyPI Transformers is NOT a substitute.
+# This must stay in sync with the pi extra in pyproject.toml.
+transformers @ git+https://github.com/huggingface/transformers.git@dcddb970176382c0fcf4521b0c0e6fc15894dfe0
+tokenizers==0.21.4
+
+# Numerical dependencies. SciPy respects the pi extra's <1.15 constraint.
+numpy==2.2.6
+scipy==1.14.1
+einops==0.8.2
+safetensors==0.8.0
+
+# Distributed training, datasets and checkpoint/tokenizer downloads.
+accelerate==1.15.0
+datasets==4.8.5
+huggingface-hub[hf-transfer,cli]==0.35.3
+diffusers==0.35.2
+draccus==0.10.0
+
+# Video/image loading. FFmpeg shared libraries must be installed separately.
+av==15.1.0
+opencv-python-headless==4.12.0.88
+
+# Imported by the trainer; online logging remains disabled unless requested.
+wandb==0.24.2
