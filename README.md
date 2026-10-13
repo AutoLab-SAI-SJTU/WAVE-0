@@ -134,6 +134,16 @@ bash scripts/train/robotwin/train_robotwin_stage2.sh
 
 #### LIBERO
 
+For LIBERO evaluation, follow the [official LIBERO guide](https://github.com/Lifelong-Robot-Learning/LIBERO) to install the simulator and task assets into the `wave0` environment.
+
+```bash
+POLICY_PATH=/path/to/wave0/checkpoint \
+LIBERO_SRC=/path/to/LIBERO \
+bash scripts/eval/libero/eval_libero.sh
+```
+
+By default, the script evaluates all 40 tasks across the four original LIBERO suites, with 50 episodes per task and seed 42.
+
 #### RoboTwin2.0
 
 For RoboTwin 2.0 evaluation, follow the [official LeRobot RoboTwin guide](https://huggingface.co/docs/lerobot/robotwin) for simulator installation, asset downloads, and environment setup. Refer to [requirements-eval.txt](scripts/eval/robotwin/requirements-eval.txt) for evaluation dependencies.
