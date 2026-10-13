@@ -1,9 +1,9 @@
 <div align="center">
   <h1>WAVE-0: Bridging VLA Policies and WAMs with Lightweight Latent Future Prediction</h1>
 
-  <!-- TODO: Replace the placeholder links with the paper, project page, and model URLs. -->
+  <!-- TODO: Replace the paper placeholder with the published URL. -->
   <a href="#"><img src="https://img.shields.io/badge/Paper-Coming%20Soon-b31b1b?logo=arXiv" alt="Paper: Coming Soon"></a> &nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="#"><img src="https://img.shields.io/badge/Project%20Page-Coming%20Soon-green" alt="Project Page: Coming Soon"></a> &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://hmwang2002.github.io/release/wave0/"><img src="https://img.shields.io/badge/Project-Page-green" alt="Project Page"></a> &nbsp;&nbsp;&nbsp;&nbsp;
   <a href="https://huggingface.co/collections/KiyotakaWang/wave-0"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Models-HF-orange" alt="Models on Hugging Face"></a>
 </div>
 
@@ -17,13 +17,13 @@ We introduce **WAVE-0 (World-model-Augmented VLA Execution)**, a framework that 
 
 ## 🔥 News
 
-- **[2026-10-13]** 👋 Upload paper and init project. [Read]()
+- **[2026-10-14]** 👋 Upload paper and init project. [Read]()
 
 ## 📝 Open-Source Plan
 
 - [ ] Paper
-- [ ] Model weights
-- [ ] Training scripts
+- [x] Model weights
+- [x] Training scripts
 
 ## 📌 Quick Start
 
