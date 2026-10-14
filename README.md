@@ -1,8 +1,7 @@
 <div align="center">
   <h1>WAVE-0: Bridging VLA Policies and WAMs with Lightweight Latent Future Prediction</h1>
 
-  <!-- TODO: Replace the paper placeholder with the published URL. -->
-  <a href="#"><img src="https://img.shields.io/badge/Paper-Coming%20Soon-b31b1b?logo=arXiv" alt="Paper: Coming Soon"></a> &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://arxiv.org/abs/2610.18568"><img src="https://img.shields.io/badge/arXiv-2610.18568-b31b1b?logo=arXiv" alt="arXiv: 2610.18568"></a> &nbsp;&nbsp;&nbsp;&nbsp;
   <a href="https://hmwang2002.github.io/release/wave0/"><img src="https://img.shields.io/badge/Project-Page-green" alt="Project Page"></a> &nbsp;&nbsp;&nbsp;&nbsp;
   <a href="https://huggingface.co/collections/KiyotakaWang/wave-0"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Models-HF-orange" alt="Models on Hugging Face"></a>
 </div>
@@ -17,11 +16,11 @@ We introduce **WAVE-0 (World-model-Augmented VLA Execution)**, a framework that 
 
 ## 🔥 News
 
-- **[2026-10-14]** 👋 Upload paper and init project. [Read]()
+- **[2026-10-14]** 👋 Upload paper and init project. [Read](https://arxiv.org/abs/2610.18568)
 
 ## 📝 Open-Source Plan
 
-- [ ] Paper
+- [x] Paper
 - [x] Model weights
 - [x] Training scripts
 
@@ -163,5 +162,13 @@ Our implementation builds on [LeRobot](https://github.com/huggingface/lerobot) a
 ## 📖 Citation
 
 ```BibTex
-
+@misc{wang2026wave0bridgingvlapolicies,
+      title={WAVE-0: Bridging VLA Policies and WAMs with Lightweight Latent Future Prediction},
+      author={Haomin Wang and Anqiong Ji and Ke Wang and Zhongshan Liu and Ru Ying and Ran Zheng and Zhipeng Zhang},
+      year={2026},
+      eprint={2610.18568},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2610.18568},
+}
 ```
